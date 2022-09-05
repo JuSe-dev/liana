@@ -25,8 +25,12 @@
 
 html {
     font-size: 62.5%;
-    color: var(--clr_black);
+    color: var(--clr_grey);
     font-family: var(--font_txt);
+}
+
+body {
+    overflow-anchor: none;
 }
 
 section {
