@@ -34,7 +34,7 @@ body {
 }
 
 section {
-    margin: 4rem 0;
+    margin: 4rem 0 0 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -57,6 +57,8 @@ select {
 select {
     color: var(--clr_grey);
     font-size: 1.5rem !important;
+    height: 3rem;
+    width: 12rem;
 }
 
 /* Force footer to bottom */

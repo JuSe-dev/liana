@@ -45,6 +45,7 @@ window.addEventListener('load', () => {
 	if (isInViewport(spot) === true) {
 		startCount();
 	}
-})
+});
+
 document.addEventListener('scroll', startCount);
 

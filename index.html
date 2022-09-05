@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/global.css">
 	<link rel="stylesheet" type="text/css" href="./css/header.css">
 	<link rel="stylesheet" type="text/css" href="./css/sectionOne.css">
+	<link rel="stylesheet" type="text/css" href="./css/sectionTwo.css">
 	<link rel="stylesheet" type="text/css" href="./css/sectionThree.css">	
 	<link rel="stylesheet" type="text/css" href="./css/sectionFour.css">
 	<link rel="stylesheet" type="text/css" href="./css/footer.css">
@@ -39,7 +40,7 @@
 			</div>
 			<div class="header-bottom padded-container">
 				<div class="header-brand">
-					<img src="./assets/img/brand.svg" alt="brand-logo">
+					<img src="./assets/img/brand.svg" alt="brand-logo" />
 				</div>
 				<div header-bottom-menu>
 					<button class="menu-toggle" aria-controls="nav-items" aria-expanded="false">
@@ -48,7 +49,7 @@
 					<nav class="navbar">
 						<ul class="nav-items text-links">
 							<li class="menu-search">
-								<input type="text" placeholder="Search">
+								<input type="text" placeholder="Search" />
 								<button>
 									<i class="fa-solid fa-magnifying-glass"></i>
 								</button>
@@ -84,7 +85,7 @@
 							</li>
 						</ul>
 						<div class="nav-search">
-							<input type="text" placeholder="Search">
+							<input type="text" placeholder="Search" />
 							<button>Search</button>
 						</div>
 					</nav>
@@ -98,7 +99,7 @@
 			</div>
 			<div class="showcase-mobile">
 				<div class="showcase-mobile-img">
-					<img src="./assets/img/christopher-gower.jpg">
+					<img src="./assets/img/christopher-gower.jpg" />
 				</div>
 				<div class="showcase-info">
 					<h1>Software fueling digital marketing</h1>
@@ -139,41 +140,33 @@
 					</ul>
 				</div>
 				<div id="statistics" class="statistics">
-					<ul>
-						<li>
-							<div class="stats">
-								<div class="stats-icon">
-									<i class="fa-solid fa-toolbox"></i>
-								</div>
-								<div class="stats1">
-									<h1 class="stat-num" data="3000">--</h1>
-									<p>Clients</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="stats">
-								<div class="stats-icon">
-									<i class="fa-regular fa-face-grin-beam"></i>
-								</div>
-								<div class="stats2">
-									<h1 class="stat-num" data="180">--</h1>
-									<p>Employees</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="stats">
-								<div class="stats-icon">
-									<i class="fa-solid fa-earth-europe"></i>
-								</div>
-								<div class="stats3">
-									<h1 class="stat-num" data="10000">--</h1>
-									<p>Daily users</p>
-								</div>
-							</div>
-						</li>
-					</ul>
+					<div class="stats">
+						<div class="stats-icon">
+							<i class="fa-solid fa-toolbox"></i>
+						</div>
+						<div class="stats1">
+							<h1 class="stat-num" data="3000">--</h1>
+							<p>Clients</p>
+						</div>
+					</div>
+					<div class="stats">
+						<div class="stats-icon">
+							<i class="fa-regular fa-face-grin-beam"></i>
+						</div>
+						<div class="stats2">
+							<h1 class="stat-num" data="180">--</h1>
+							<p>Employees</p>
+						</div>
+					</div>
+					<div class="stats">
+						<div class="stats-icon">
+							<i class="fa-solid fa-earth-europe"></i>
+						</div>
+						<div class="stats3">
+							<h1 class="stat-num" data="10000">--</h1>
+							<p>Daily users</p>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- Section 2 -->
@@ -183,7 +176,7 @@
 				</div>
 				<div class="news">
 					<ul class="feeds">
-						
+						<!-- Elements are created with JavaScript. Check news.js -->
 					</ul>
 				</div>
 			</section>
@@ -195,7 +188,7 @@
 				<div class="references-cards">
 					<div class="ref-card">
 						<div class="ref-logo bosch-logo">
-							<img src="./assets/img/bosch.png">
+							<img src="./assets/img/bosch.png" />
 						</div>
 						<div class="ref-text bosch-text">
 							<h3>Robert Bosch</h3>
@@ -204,7 +197,7 @@
 					</div>
 					<div class="ref-card">
 						<div class="ref-logo tbs-logo">
-							<img src="./assets/img/tbs-logo.png">
+							<img src="./assets/img/tbs-logo.png" />
 						</div>
 						<div class="ref-text bosch-text">
 							<h3>The Body Shop</h3>
@@ -215,7 +208,7 @@
 					</div>
 					<div class="ref-card">
 						<div class="ref-logo lapland-logo">
-							<img src="./assets/img/lapland.png">
+							<img src="./assets/img/lapland.png" />
 						</div>
 						<div class="ref-text bosch-text">
 							<h3>Lapland Hotels</h3>
@@ -224,7 +217,7 @@
 					</div>
 					<div class="ref-card">
 						<div class="ref-logo ikea-logo">
-							<img src="./assets/img/ikea-logo.svg">
+							<img src="./assets/img/ikea-logo.svg" />
 						</div>
 						<div class="ref-text bosch-text">
 							<h3>IKEA</h3>
@@ -240,12 +233,20 @@
 					<p>Follow our story and get the latest promotonial news about our products and events.</p>
 				</div>
 				<div class="newsletter-form">
-					<form action="">
+					<form action="" method="" onsubmit="submitForm()">
 						<div class="form-fields">
-							<i class="fa-solid fa-envelope"></i>
-							<input type="text" name="" placeholder="Your email address">
+							<label for="email">
+								<i class="fa-solid fa-envelope"></i>		
+							</label>
+							<input 
+								type="email" 
+								id="email" 
+								name="email" 
+								placeholder="Your email address" 
+								required 
+							/>
 						</div>
-						<button type="button" class="form-btn">Subscribe</button>
+						<button type="submit" class="form-btn">Subscribe</button>
 					</form>
 					<div class="sub-notify">
 						<i class="fa-regular fa-circle-check"></i>

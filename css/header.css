@@ -79,7 +79,7 @@
 	border: solid thin var(--clr_grey_lg);
 	border-radius: 0.4rem;
 	padding: 0.7rem;
-	width: 15rem;
+	width: 12rem;
 }
 
 .nav-search button {
@@ -182,8 +182,9 @@
 
 	.menu-search input {
 		font-size: 1.6rem;
-		padding: 0.6rem;
+		height: 3rem;
 		width: 12rem;
+		padding: 0 1rem;
 		border-top-left-radius: 0.4rem;
 		border-bottom-left-radius: 0.4rem;
 	}
@@ -195,7 +196,7 @@
 		font-size: 2rem;
 		background: var(--clr_green);
 		color: var(--clr_white);
-		padding: 0.5rem 0.5rem;
+		padding: 0.5rem;
 		border-top-right-radius: 0.4rem;
 		border-bottom-right-radius: 0.4rem;
 	}
@@ -209,7 +210,7 @@
 		color: var(--clr_white);
 		background: var(--clr_green);
 		font-size: 2rem;
-		padding: 0.45rem;
+		padding: 0.5rem;
 		border-top-left-radius: 0.4rem;
 		border-bottom-left-radius: 0.4rem;
 	}
@@ -218,8 +219,6 @@
 		font-size: 1.6rem;
 		border-top-right-radius: 0.4rem;
 		border-bottom-right-radius: 0.4rem;
-		padding: 0.5rem;
-		width: 12rem;
 	}
 
 	.intra-news {
