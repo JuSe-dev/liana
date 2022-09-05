@@ -1,9 +1,20 @@
+const spot = document.querySelector('.stats');
 const values = document.querySelectorAll('.stat-num');
 const interval = 2000;
 let times = 1;
 
-document.addEventListener('scroll', () => {
-	if (times > 0) {
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function startCount() {
+		if (times > 0) {
 		values.forEach(value => {
 			let startValue = 0;
 			let endValue = parseInt(value.getAttribute('data'));
@@ -26,6 +37,14 @@ document.addEventListener('scroll', () => {
 			}, duration);
 		})
 		times -= 1;
+		document.removeEventListener('scroll', startCount);
 	}
+}
 
+window.addEventListener('load', () => {
+	if (isInViewport(spot) === true) {
+		startCount();
+	}
 })
+document.addEventListener('scroll', startCount);
+

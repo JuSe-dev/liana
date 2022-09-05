@@ -6,12 +6,11 @@
     --clr_white:    #FFFFFF;
     --clr_black:    #000000;
     --clr_grey:     #444444;
+    --clr_grey_lg:  #d3d3d3;
 
     --font_txt:     Arial, sans-serif;
     --font_header:  'Source Sans Pro', sans-serif;
 
-    --card_width:   80rem;
-    --card_height:  50rem;
 }
 
 * {
@@ -31,11 +30,18 @@ html {
 }
 
 section {
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: var(--font_header);
+}
+
+p,
+input {
+    font-size: 1.6rem;
+    color: var(--clr_grey);
+    border-color: var(--clr_grey_lg);
 }
 
 a,
@@ -49,8 +55,49 @@ select {
     font-size: 1.5rem !important;
 }
 
+/* Force footer to bottom */
+/*.wrapper-main {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 6rem;
+}
+
+.footer-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}*/
+
 .padded-container {
-    padding: 2rem 8rem;
+    padding: 2.8rem 8rem;
+}
+
+.section-headers {
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--clr_grey);
+}
+
+.circle-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr_green);
+    color: var(--clr_white);
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.circle-links:hover {
+    transform: scale(1.2);
+}
+
+.text-links a {
+    font-size: 1.6rem;
+    color: var(--clr_white);
 }
 
 @media only screen and (min-width: 2561px) {

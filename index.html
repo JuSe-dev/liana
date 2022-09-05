@@ -6,6 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="./css/global.css">
 	<link rel="stylesheet" type="text/css" href="./css/header.css">
 	<link rel="stylesheet" type="text/css" href="./css/sectionOne.css">
+	<link rel="stylesheet" type="text/css" href="./css/sectionThree.css">	
+	<link rel="stylesheet" type="text/css" href="./css/sectionFour.css">
+	<link rel="stylesheet" type="text/css" href="./css/footer.css">
 	<link 
 		rel="stylesheet" 
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
@@ -20,7 +23,7 @@
 		<!-- Header -->
 		<header>
 			<div class="header-top padded-container">
-				<ul>
+				<ul class="text-links">
 					<li><a href="#">News</a></li>
 					<li><a href="#">Intranet</a></li>
 					<li class="nav-language">
@@ -38,52 +41,54 @@
 				<div class="header-brand">
 					<img src="./assets/img/brand.svg" alt="brand-logo">
 				</div>
-				<button class="menu-toggle" aria-controls="nav-items" aria-expanded="false">
-					<i class="menu-icon fa-sharp fa-solid fa-bars"></i>
-				</button>
-				<nav class="navbar">
-					<ul class="nav-items">
-						<li class="menu-search">
+				<div header-bottom-menu>
+					<button class="menu-toggle" aria-controls="nav-items" aria-expanded="false">
+						<i class="menu-icon fa-sharp fa-solid fa-bars"></i>
+					</button>	
+					<nav class="navbar">
+						<ul class="nav-items text-links">
+							<li class="menu-search">
+								<input type="text" placeholder="Search">
+								<button>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</button>
+							</li>
+							<li class="menu-language">
+								<i class="fa-solid fa-globe"></i>
+								<select>
+									<option>In English</option>
+									<option>auf Deutch</option>
+									<option>En français</option>
+									<option>På Svenska</option>
+									<option>Suomeksi</option>
+								</select>
+							</li>
+							<li>
+								<a href="#">Company</a>
+							</li>
+							<li>
+								<a href="#">Products</a>
+							</li>
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+							<li>
+								<div class="intra-news">
+									<a class="circle-links" href="#">
+										<i class="fa-solid fa-user"></i>		
+									</a>
+									<a class="circle-links" href="#">
+										<i class="fa-solid fa-rss"></i>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<div class="nav-search">
 							<input type="text" placeholder="Search">
-							<button>
-								<i class="fa-solid fa-magnifying-glass"></i>
-							</button>
-						</li>
-						<li class="menu-language">
-							<i class="fa-solid fa-globe"></i>
-							<select>
-								<option>In English</option>
-								<option>auf Deutch</option>
-								<option>En français</option>
-								<option>På Svenska</option>
-								<option>Suomeksi</option>
-							</select>
-						</li>
-						<li>
-							<a href="#">Company</a>
-						</li>
-						<li>
-							<a href="#">Products</a>
-						</li>
-						<li>
-							<a href="#">Contact Us</a>
-						</li>
-						<li>
-							<div class="intra-news">
-								<a href="#">
-									<i class="fa-solid fa-circle-user"></i>			
-								</a>
-								<a href="#">
-									<i class="fa-sharp fa-solid fa-square-rss"></i>
-								</a>
-							</div>
-						</li>
-					</ul>
-					<div class="nav-search">
-						<input type="text" placeholder="Search">
-						<button>Search</button>
-					</div>
-				</nav>
+							<button>Search</button>
+						</div>
+					</nav>
+			</div>
 			</div>
 			<div class="showcase">
 				<div class="showcase-info">
@@ -106,18 +111,20 @@
 			<!-- Section 1 -->
 			<section class="section1 padded-container">
 				<div class="subpages-cards">
-					<ul>
+					<ul class="text-links">
 						<li>
 							<a href="#">
 								<div id="sub-card1" class="sub-card">
 									<h3>Company</h3>
+									<div class="card-curtain"></div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#">
 								<div id="sub-card2" class="sub-card">
-									<h3>Products</h3>								
+									<h3>Products</h3>				
+									<div class="card-curtain"></div>				
 								</div>
 							</a>
 						</li>
@@ -125,6 +132,7 @@
 							<a href="#">
 								<div id="sub-card3" class="sub-card">
 									<h3>Contact Us</h3>
+									<div class="card-curtain"></div>
 								</div>
 							</a>
 						</li>
@@ -138,7 +146,7 @@
 									<i class="fa-solid fa-toolbox"></i>
 								</div>
 								<div class="stats1">
-									<h1 class="stat-num" data="3000">0</h1>
+									<h1 class="stat-num" data="3000">--</h1>
 									<p>Clients</p>
 								</div>
 							</div>
@@ -149,7 +157,7 @@
 									<i class="fa-regular fa-face-grin-beam"></i>
 								</div>
 								<div class="stats2">
-									<h1 class="stat-num" data="180">0</h1>
+									<h1 class="stat-num" data="180">--</h1>
 									<p>Employees</p>
 								</div>
 							</div>
@@ -160,7 +168,7 @@
 									<i class="fa-solid fa-earth-europe"></i>
 								</div>
 								<div class="stats3">
-									<h1 class="stat-num" data="10000">0</h1>
+									<h1 class="stat-num" data="10000">--</h1>
 									<p>Daily users</p>
 								</div>
 							</div>
@@ -179,11 +187,93 @@
 					</ul>
 				</div>
 			</section>
+			<!-- Section 3 -->
+			<section class="section3 padded-container">
+				<div class="references-info">
+					<h2 class="section-headers">References</h2>
+				</div>
+			</section>
+			<!-- Section 4 -->
+			<section class="section4 padded-container">
+				<div class="newsletter-info">
+					<h2 class="section-headers">Subsbribe to our newsletter</h2>
+					<p>Follow our story and get the latest promotonial news about our products and events.</p>
+				</div>
+				<div class="newsletter-form">
+					<form action="">
+						<div class="form-fields">
+							<i class="fa-solid fa-envelope"></i>
+							<input type="text" name="" placeholder="Your email address">
+						</div>
+						<button type="button" class="form-btn">Subscribe</button>
+					</form>
+					<div class="sub-notify">
+						<i class="fa-regular fa-circle-check"></i>
+						<p>Thank you for subscribing!</p>
+					</div>
+				</div>
+			</section>
 		</main>
 		<!-- Footer -->
+		<footer>
+			<div class="footer-container padded-container">
+				<div class="footer-contact">
+					<div class="footer-contact-info">
+						<h3>Liana Technologies</h3>
+						<h4>Sales and inquiries</h4>
+						<p>Email: sales@lianatech.com</p>
+						<p>Phone: +358 10 287 7053</p>
+					</div>
+					<div class="footer-contact-btn">
+						<button>Contact us</button>
+					</div>
+				</div>
+				<div class="footer-links">
+					<div class="internal-links">
+						<ul class="text-links">
+							<li>
+								<a href="#">Company</a>
+							</li>
+							<li>
+								<a href="#">Products</a>
+							</li>
+							<li>
+								<a href="#">Contact us</a>
+							</li>
+							<li>
+								<a href="#">News</a>
+							</li>
+							<li>
+								<a href="#">Intranet</a>
+							</li>
+						</ul>
+					</div>
+					<div class="social-links">
+							<ul>
+								<li>
+									<a class="circle-links" href="#">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a class="circle-links" href="#">
+										<i class="fa-brands fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a class="circle-links" href="#">
+										<i class="fa-brands fa-linkedin-in"></i>
+									</a>
+								</li>	
+							</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 	<script type="text/javascript" src="./js/navmenu.js"></script>
 	<script type="text/javascript" src="./js/count.js"></script>
 	<script type="text/javascript" src="./js/news.js"></script>
+	<script type="text/javascript" src="./js/subscribe.js"></script>
 </body>
 </html>

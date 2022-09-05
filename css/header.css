@@ -10,11 +10,6 @@
 	justify-content: safe flex-end;
 }
 
-.header-top a {
-	font-size: 1.6rem;
-	color: var(--clr_white);
-}
-
 .nav-language {
 	display: flex;
 	align-items: center;
@@ -33,12 +28,16 @@
 	position: relative;
 }
 
-.header-brand {
+.header-brand * {
+	width: 12rem;
+	height: auto;
+	font-size: 4rem;
+}
+
+.header-bottom-menu {
+	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	width: 14rem;
-	height: auto;
 }
 
 .menu-toggle {
@@ -56,14 +55,13 @@
 .navbar {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-end;
 }
 
 .nav-items {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
-	font-size: 1.6rem;
-	padding: 0 0.5rem;
 }
 
 .nav-items a {
@@ -73,13 +71,12 @@
 .nav-search {
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-end;
 	gap: 0.4rem;
 }
 
 .nav-search input {
-	font-size: 1.6rem;
-	border: solid thin var(--clr_grey);
+	border: solid thin var(--clr_grey_lg);
 	border-radius: 0.4rem;
 	padding: 0.7rem;
 	width: 15rem;
@@ -100,7 +97,7 @@
 .showcase {
 	background: url(../assets/img/christopher-gower.jpg);
 	background-color: var(--clr_grey);
-	padding: 20rem 0;
+	padding: 10rem 0;
 	background-blend-mode: multiply;
 	background-position: center;
 	background-size: cover;
@@ -119,7 +116,7 @@
 }
 
 .showcase h1 {
-	font-size: 6rem;
+	font-size: 4rem;
 	font-weight: 300;
 	text-shadow: 0 0 2rem var(--clr_black);
 	color: var(--clr_white);
@@ -135,6 +132,12 @@
 
 .showcase-mobile {
 	display: none;
+}
+
+@media only screen and (min-width: 1750px) {
+	.showcase {
+		padding: 20rem 0;
+	}
 }
 
 @media only screen and (max-width:  850px) {
@@ -163,7 +166,8 @@
 		position: absolute;
 		background: transparent;
 		color: black;
-		top: 38%;
+		top: 50%;
+		bottom: 50%;
 		right: 2rem;
 		z-index: 9999;
 	}
@@ -225,11 +229,6 @@
 		gap: 2rem;
 	}
 
-	.intra-news a i {
-		color: var(--clr_green);
-		font-size: 3rem;
-	}
-
 	.nav-items {
 		position: fixed;
 		z-index: 999;
@@ -260,13 +259,30 @@
 	}
 
 	.showcase {
-		padding: 15rem;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.showcase-info {
+		padding-top: 8rem;
 	}
 }
 
 @media only screen and (max-width:  555px) {
+
+	.header-bottom {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		box-shadow: 0 1 1rem var(--clr_black);
+	}
+
 	.showcase {
 		display: none;
+	}
+
+	.showcase-info {
+		padding-top: 0;
 	}
 
 	.showcase-mobile {
@@ -275,6 +291,7 @@
 		justify-content: center;
 		align-items: center;
 		gap: 4rem;
+		padding-top: 6rem;
 	}
 
 	.showcase-mobile h1 {
