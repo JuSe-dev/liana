@@ -228,7 +228,9 @@
 	}
 
 	.nav-items {
-		position: fixed;
+		position: absolute; /* fixed as default */
+		min-height: 100vh; /* remove if using fixed */
+		overflow: scroll; /* remove if using fixed */
 		z-index: 999;
 		inset: 0 0 0 30%;
 		flex-direction: column;
