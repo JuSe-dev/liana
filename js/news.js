@@ -18,7 +18,7 @@ function getFeeds() {
             }
          } 
          if (xhr.status == 404) {
-            console.log('File or resource not found')
+            console.log('File or resource not found');
          }
       }
    };
