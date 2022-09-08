@@ -22,7 +22,7 @@ function getFeeds() {
          }
       }
    };
-   xhr.open('GET', 'https://cors-anywhere.herokuapp.com/https://www.lianatech.com/resources/blog.rss', true);
+   xhr.open('GET', 'https://shrouded-caverns-33692.herokuapp.com/https://www.lianatech.com/resources/blog.rss', true);
    xhr.send();
 }
 
