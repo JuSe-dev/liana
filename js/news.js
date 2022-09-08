@@ -22,6 +22,9 @@ function getFeeds() {
          }
       }
    };
+   // 'Replace https://shrouded-caverns-33692.herokuapp.com/' with 'https://cors-anywhere.herokuapp.com/' if the news won't show up on page
+   // After that reload and check browser console. If there's an error, follow the error link and get temporary access via the button
+   // After that refresh page... Now, the news should show up
    xhr.open('GET', 'https://shrouded-caverns-33692.herokuapp.com/https://www.lianatech.com/resources/blog.rss', true);
    xhr.send();
 }
